@@ -1,9 +1,12 @@
-def sayFullName(fn,ln,mn=''):
+def sayFullName(fn,ln='',mn=''):
     """ Compute a full name from the first,last and middle names and return the full name """
-    if mn:
+    if mn and ln:
         return fn.title()+' '+mn.title()+' '+ln.title()
     else:
-        return fn.title()+' '+ln.title()
+        if ln:
+            return fn.title()+' '+ln.title()
+        else:
+            return fn.title()
     
 
 # while True:
