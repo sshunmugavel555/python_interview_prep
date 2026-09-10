@@ -10,7 +10,7 @@ def test_example(page: Page) -> None:
     page.get_by_role("textbox", name="Username").press("Tab")
     page.get_by_role("textbox", name="Password").fill("Password123")
     expect(page.get_by_role("textbox", name="Username")).to_have_value("student");
-    expect(page.get_by_role("textbox", name="Password")).to_have_value("Password123");
+    expect(page.get_by_role("textbox", name="Password")).to_have_value("Password12345");
     page.get_by_role("button", name="Submit").click()
 
     expect(page.get_by_role("link", name="Practice Test Automation", exact=True)).to_be_visible()
