@@ -1,0 +1,14 @@
+[
+  {
+    "uname": "student",
+    "pwd": "Password123"
+  },
+  {
+    "uname": "user1",
+    "pwd": "User123"
+  },
+  {
+    "uname": "Admin",
+    "pwd": "Admin123"
+  }
+]
